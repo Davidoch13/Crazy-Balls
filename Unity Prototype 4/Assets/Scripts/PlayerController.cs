@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    float speed = 10f;
+    public float speed = 10f;
     float powerUpStrength = 15f;
 
     public bool hasPowerup = false;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         float forwardInput = Input.GetAxis("Vertical");
 
-        playerRb.AddForce(focalPoint.transform.forward * forwardInput * speed);
+        playerRb.AddForce(focalPoint.transform.forward * forwardInput * speed * Time.deltaTime, ForceMode.VelocityChange);
 
         powerupIndicator.transform.position = transform.position + new Vector3 (0, -0.5f, 0);
     }
