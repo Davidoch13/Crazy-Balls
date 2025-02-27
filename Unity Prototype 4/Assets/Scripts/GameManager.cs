@@ -37,10 +37,12 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        AudioManager.Instance.PlaySFX("Boton");
     }
 
     public void GoToMenu()
     {
         SceneManager.LoadScene("Game Menu");
+        AudioManager.Instance.PlaySFX("Boton");
     }
 }

@@ -913,6 +913,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6812271804045893444, guid: 514dfca6a203a6a4992926abed8980d2, type: 3}
+      propertyPath: sfxSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6812271804045893444, guid: 514dfca6a203a6a4992926abed8980d2, type: 3}
+      propertyPath: sfxSounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 454a1b44d4d2d0747a9beeb6d5eb1696, type: 3}
+    - target: {fileID: 6812271804045893444, guid: 514dfca6a203a6a4992926abed8980d2, type: 3}
+      propertyPath: sfxSounds.Array.data[5].name
+      value: Explosion
+      objectReference: {fileID: 0}
     - target: {fileID: 6993573657453036581, guid: 514dfca6a203a6a4992926abed8980d2, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -2203,7 +2215,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.11854753, g: 0.17061725, b: 0.6792453, a: 1}
+  m_BackGroundColor: {r: 0.26713246, g: 0.6509434, b: 0.3535498, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

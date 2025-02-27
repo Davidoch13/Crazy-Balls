@@ -25,15 +25,18 @@ public class Menu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        AudioManager.Instance.PlaySFX("Boton");
     }
 
     public void OptionsMenu()
     {
         optionsPanel.gameObject.SetActive(true);
+        AudioManager.Instance.PlaySFX("Boton");
     }
 
     public void CloseOptions()
     {
         optionsPanel.gameObject.SetActive(false);
+        AudioManager.Instance.PlaySFX("Boton");
     }
 }
